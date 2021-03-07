@@ -1,0 +1,65 @@
+/*--  Tab Styling --*/
+tab.tabbrowser-tab {
+  margin-bottom: 8px !important;
+  margin-left: 8px !important;
+}
+
+tab.tab-browser:first-child {
+  margin-left: 12px !important;
+}
+
+tab.tabbrowser-tab::after {
+  border: none !important;
+}
+
+vbox.tab-background {
+ border-radius: 5px;
+}
+
+vbox.tab-background[selected="true"] {
+  background-color: #84a0c6 !important;
+}
+
+vbox.tab-background {
+  background-color: #434c5e !important;
+}
+
+label.tab-text[selected="true"] {
+  color: #1e2132 !important;
+}
+
+hbox.tab-content[align="center"] {
+  padding: 0.5em !important;
+}
+
+/*-- Align Button --*/
+#tabs-newtab-button {
+  margin-bottom: 8px !important;
+}
+
+/*-- Hide Bar On Top Of Selected Tab, Taken From: https://www.reddit.com/r/firefox/comments/7745x4/is_there_any_way_to_disable_the_blue_line_on_top/ --*/
+#TabsToolbar .tabbrowser-tab .tab-line {
+    display: none !important;
+}
+
+/*-- Change Toolbar Background --*/
+#nav-bar {
+  background-color: #353C4A !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/*-- Hide Tracking Protection Button --*/
+#tracking-protection-icon-container {
+  display: none;
+}
+
+/*-- Hide PanelUI-button --*/
+#PanelUI-button {
+  border-inline-start: none !important;
+}
+
+/*-- Change Search Bar Button --*/
+#urlbar-background {
+  background-color: #434c5e !important;
+}

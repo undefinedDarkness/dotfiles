@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.visualizer-container, .visualizer-container progressbar {
+  background: transparent;
+}
+
+.visualizer-container progressbar trough {
+  progress {
+    /*-- Filled in part --*/
+    background: $barFill;
+    min-width: $barWidth;
+    border-radius: $barRadius $barRadius 0 0; // top-l top-r btm-l btm-r
+  }
+
+  /*-- Non filled part & parent of filled part --*/
+  background: $barNonFill;
+}
+
+.visualizer-container progressbar {
+  /*-- Entire progress bar - padding & margin included --*/
+  margin-left: $barMargin;
+  min-width: $barWidth;
+} 

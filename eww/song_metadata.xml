@@ -1,0 +1,25 @@
+<eww>
+
+  
+  <windows>
+    <window name="song_metadata" stacking="bg" focusable="true">
+      <geometry x="-2%" y="6%" anchor="top right" width="150px" height="128px" />
+      <widget>
+        <box orientation="h" space-evenly="false" class="song-metadata-container">
+          <!-- Buttons -->
+          <box orientation="v">
+            <button onclick="playerctl previous"></button>
+            <button onclick="playerctl play-pause">{{song-status-icon}}</button>
+            <button onclick="playerctl next"></button>
+          </box>
+          <imagebox src="{{song-image}}" radius="0 8px 8px 0" width="128" height="128" class="cover center" />
+        </box>
+      </widget>
+    </window>
+  </windows>
+
+  <variables>
+    <script-var name="song-status-icon" interval="1s">$HOME/Documents/Scripts/playerctl.sh status-icon</script-var>
+    <script-var name="song-image" interval="1s">$HOME/Documents/Scripts/playerctl.sh art</script-var>
+  </variables>
+</eww>

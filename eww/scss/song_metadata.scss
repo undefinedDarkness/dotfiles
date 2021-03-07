@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+.song-metadata-container {
+  background-color: $generalHighlight;
+  border-radius: $generalWidgetRadius;
+
+  button {
+    background: $generalWidgetBG;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 0;
+  }
+
+  button:hover {
+    background: #84a0c6;
+
+    label {
+      color: #dcdfe7;
+    }
+  }
+
+  button:first-child {
+    border-radius: $generalWidgetRadius 0 0 0;
+  }
+
+  button:last-child {
+    border-radius: 0 0 0 $generalWidgetRadius;
+  }
+
+  // Remember to change the hardcoded values to image box.
+}

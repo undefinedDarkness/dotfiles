@@ -1,0 +1,25 @@
+<eww>
+  <includes>
+    <!-- File Imports Go Here -->
+
+    <!-- Visualizer -->
+    <file path="./visualizer.xml" />
+  
+    <!-- Song Metadata -->
+    <file path="./song_metadata.xml" />
+
+    <!--  Notification -->
+    <file path="./notification.xml" />
+  
+    <!-- Bar -->
+    <file path="./bar.xml" />
+  </includes>
+  <definitions>
+    
+     <!-- Image Box Workaround -->
+    <def name="imagebox">
+        <!-- All attributes are needed! -->
+        <box class="imagebox {{class}}" style="background-image: url('{{src}}'); min-width: {{width}}px; min-height: {{height}}px; border-radius: {{radius}}"></box>
+      </def>
+  </definitions>
+</eww>

@@ -1,0 +1,23 @@
+<eww>
+  <definitions>
+    <!-- Shortcut Widget -->
+    <def name="visualizer-bar">
+      <progress flipped="true" value="{{bar_height}}" orientation="v" /> 
+    </def>
+  </definitions>
+  <windows>
+    <!-- Window -->
+    <window name="visualizer" stacking="bg" focusable="true">
+      <geometry anchor="bottom center" width="30%" />
+      <widget>
+        <box class="visualizer-container" space-evenly="true">
+          <literal content="{{visualizer-data}}" />
+        </box>
+      </widget>
+    </window>
+  </windows>
+  <variables>
+    <!-- Main Var -->
+    <script-var name="visualizer-data">$HOME/Documents/Scripts/target/release/visualizer 10</script-var>
+  </variables>
+</eww>

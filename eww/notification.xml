@@ -1,0 +1,22 @@
+<eww>
+  <variables>
+    <var name="notification-title"></var>
+    <var name="notification-body"></var>
+    <var name="notification-icon"></var>
+  </variables>
+
+  <windows>
+    <window name="notification" stacking="fg">
+      <geometry anchor="top center" y="6%" />
+      <widget>
+        <box space-evenly="false" orientation="h" class="notification-container">
+          <image width="50" height="50" path="{{notification-icon}}" />
+          <box orientation="v" space-evenly="false" class="text">
+              <label class="title" halign="start" text="{{notification-title}}" />
+              <label text="{{notification-body}}" />
+          </box>
+        </box>
+      </widget>
+    </window>
+  </windows>
+</eww>

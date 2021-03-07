@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.notification-container {
+  background-color: $generalWidgetBG;
+  padding: 0.8em;
+  border-radius: $generalWidgetRadius;
+
+  .text {
+    padding-left: 0.5em;
+    padding-right: 0.2em;
+  }
+
+  label.title {
+    padding-top: 0.3em;
+    font-weight: bold;
+  }
+  
+}
+

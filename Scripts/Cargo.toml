@@ -1,0 +1,20 @@
+[package]
+name = "Scripts"
+version = "0.1.0"
+authors = ["undefinedDarkness <38278035+undefinedDarkness@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name="bar"
+path="bar.rs"
+
+
+[[bin]]
+name="visualizer"
+path="visualizer.rs"
+
+[dependencies]
+regex = "1"
+lazy_static = "1.4.0"

@@ -1,0 +1,24 @@
+<eww>
+  <definitions>
+    <def name="bar-item">
+      <button tooltip="{{content}}" onclick="wmctrl -i -a {{id}}">
+          <box space-evenly="false">
+            <imagebox src="{{icon}}" width="16" height="16" class="contain center" radius="100%" />
+            </box>
+      </button>
+    </def>
+  </definitions>
+  <windows>
+    <window name="bar" stacking="fg">
+      <geometry anchor="top left" y="60" />
+      <widget>
+        <box class="bar-container" orientation="v" space-evenly="false">
+            <literal content="{{bar-items}}" />
+        </box>
+      </widget>
+    </window>
+  </windows>
+  <variables>
+    <script-var name="bar-items">$HOME/Documents/Scripts/target/release/bar</script-var>
+  </variables>
+</eww>

@@ -1,0 +1,35 @@
+/*-- Imports Go Here --*/
+
+@use "./scss/visualizer.scss";
+@use "./scss/song_metadata.scss";
+@use "./scss/notification.scss";
+@use "./scss/bar.scss";
+
+/*-- Global Styles --*/
+window {
+  background: transparent;
+  /*-- For Debug Only! --*/
+  //border: 2px solid #00f;
+}
+
+/*-- Image Box Classes --*/
+.imagebox {
+  background-repeat: no-repeat;
+}
+
+.imagebox.contain {
+  background-size: contain;
+}
+
+.imagebox.cover {
+  background-size: cover;
+}
+
+.imagebox.center {
+  background-position: center;
+}
+
+
+.debug {
+  border: 2px solid #f00;
+}

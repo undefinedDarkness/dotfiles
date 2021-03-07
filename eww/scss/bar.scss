@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.bar-container {
+  background-color: $generalWidgetBG;
+  border-radius: 0 $generalWidgetRadius $generalWidgetRadius 0;
+
+  button {
+    background: transparent;
+    border: 0;
+    
+    .imagebox {
+      margin: 0.25em;
+    }
+  
+    .imagebox:first-child {
+      margin-top: 0.5em;
+    }
+
+    .imagebox:last-child {
+      margin-bottom: 0.5em;
+    }
+  }
+
+}
